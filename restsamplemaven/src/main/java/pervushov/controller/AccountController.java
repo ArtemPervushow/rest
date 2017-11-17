@@ -18,10 +18,6 @@ public class AccountController {
         this.accountService = accountService;
     }
 
-    @RequestMapping(value = "/accounts", method = RequestMethod.POST, consumes = MediaType.APPLICATION_JSON_VALUE)
-    public Account createAccount(@RequestBody Account account) {
-        return null;
-    }
 
     @RequestMapping(value = "/accounts/{id}")
     public Account selectAccount(@PathVariable Integer id) {
